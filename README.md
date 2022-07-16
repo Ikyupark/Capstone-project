@@ -12,8 +12,11 @@ Information security and privacy has been a major focus when it comes to online 
 The dataset for this project was obtained from Kaggle, and this dataset has 17838 rows by 18 columns. 
 Dataset will be used to creat classification models to predict the fake job posting.  
 
+Dataset URL:
+https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction
+
 ## Quesitons we hope to answer
-Is neural networking able to accurately predict the legitimacy of job postings based on posting information such as description, salary, pay and other metrics commonly seen on a wide array of job boards.
+Is machine learning able to accurately predict the legitimacy of job postings based on posting information such as description, salary, pay and other metrics commonly seen on a wide array of job boards.
 
 ## Communication Protocol
 Slack will be major communication platform for this project. 
