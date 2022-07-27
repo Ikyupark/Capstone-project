@@ -20,3 +20,7 @@ Is machine learning able to accurately predict the legitimacy of job postings ba
 
 ## Communication Protocol
 Slack will be major communication platform for this project. 
+
+## Presentation
+https://docs.google.com/presentation/d/1v73JqSy9JSMub6i1UreA3L4CD9q1c_3ZiC92hr3AVbY/edit#slide=id.p
+This is the slide that provides blueprint for the dashboard and the presentation.
