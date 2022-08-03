@@ -30,5 +30,5 @@ This is the slide that provides blueprint for the dashboard and the presentation
 
 Data and the age of technology has nonetheless benefitted society a great deal. However, it is not to say that such advancements hasn't been accompanied by down-sides. One of which is identity fraud. The ability for fraudsters, scammers, and hackers to access information as they please is unprecedented and unsuspecting victims often succumb to methods such as phone calls, emails or even fake job postings! In an effort to prevent identity theft, using a data set acquired from kagglem, we aim to create a machine learning model that can predict fraud vs non-fraud jobs based on several parameters.
 
-## Initial Analysis
+## Initial Exploratory Data Analysis
 
