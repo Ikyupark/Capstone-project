@@ -1,10 +1,9 @@
 ## Presentation
-https://docs.google.com/presentation/d/1v73JqSy9JSMub6i1UreA3L4CD9q1c_3ZiC92hr3AVbY/edit#slide=id.p
-This is the slide that provides blueprint for the dashboard and the presentation.
 
 # Introduction
 
 Data and the age of technology has nonetheless benefitted society a great deal. However, it is not to say that such advancements hasn't been accompanied by down-sides. One of which is identity fraud. The ability for fraudsters, scammers, and hackers to access information as they please is unprecedented and unsuspecting victims often succumb to methods such as phone calls, emails or even fake job postings! In an effort to prevent identity theft, using a data set acquired from [kaggle](https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction), we aim to create a machine learning model that can predict fraud vs non-fraud jobs based on several parameters.
+
 
 
 ## Outline
@@ -19,6 +18,7 @@ In data analysis, there are several important steps to follow to ensure a good r
 
 ![outline](https://user-images.githubusercontent.com/100324759/182724518-8b1d7de3-b421-4c71-8e63-b355caee50da.PNG)
 
+To view the blue print of our project please visit [this link](https://docs.google.com/presentation/d/1v73JqSy9JSMub6i1UreA3L4CD9q1c_3ZiC92hr3AVbY/edit#slide=id.p)
 
 ## Initial Exploratory Data Analysis
 
