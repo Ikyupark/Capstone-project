@@ -60,5 +60,21 @@ string_cols = list(dataset_df.select_dtypes(include='object'))
 for col in string_cols:
     dataset_df[col] = dataset_df[col].str.lower()
 ```
-## Feature Encoding
+### Feature Encoding
 
+The data was sub divided into nominal ('department', 'industry', 'function', 'Country') columns and ordinal columns ('employment_type','required_experience','required_education'). Given this, a target encoder was used on nominal columns while a labelencoder was applied to ordinal columns resulting in a much cleaner dataframe primarily made of integers. 
+```
+Targetenc = TargetEncoder()
+for col in nom_cols:
+    values = Targetenc.fit_transform(X = dataset_df[col], y = dataset_df['fraudulent'])
+    dataset_df[col] = values[col]
+```
+![cleaned_dtypes](https://user-images.githubusercontent.com/100324759/182904854-016c9b4b-b6ec-41fe-af45-ee91833976ca.PNG)
+
+### Tokenizing
+
+To further clean our text columns, we continued to use NLTK and sklearn. First, the stopwards are removed using a lamba function on the columns and then stemming was applied. Finally, the columns were then combined into 2 columns representing all of the combined text and the combined text length.
+
+![image](https://user-images.githubusercontent.com/100324759/182908382-a62976ee-2d7c-4c1d-b966-226e97c855d5.png)
+
+## Machine Learning Model
