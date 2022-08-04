@@ -36,7 +36,7 @@ Further exploration also revealed no correlation as shown in the heatmap
 
 ![heatmap](https://user-images.githubusercontent.com/100324759/182725759-5a461302-0b12-4871-810d-ff0fdd35fa83.PNG)
 
-### Summaries
+## Summaries
 
 Columns job_id, description, and requirements were dropped for the summaries which will be explained in future sections.
 
@@ -45,3 +45,20 @@ The overall fraud rate is relatively low at 95.2% and varied greatly between req
 Aside from the just counts, we should also consider the percentages which gave us the following highest: Administrative - 18.9%, Oil & Energy 38.0%, Full-time 8.5%, and Highschool Ed. 2.0%.
 
 ![graphs](https://user-images.githubusercontent.com/100324759/182728992-071a9604-9e23-4d5b-a752-bef23f18eab8.PNG)
+
+## Cleaning
+
+The data had to be cleaned primarily in the columns with strings such as requirements, description, etc due to how long and complex they are. 
+
+We first dropped the 3 columns job_id, salary, and title due to either too mnay nulls or all unique values. We were still left with a large amount of nulls so they were filled with 'not specified'. The location column was then split so that we would only keep the country for consistency. Further modifications include removing punctuation and various characters and then lower casing all characters using the following code
+```
+for col in clean_cols:
+    dataset_df[col] = dataset_df[col].replace(r'[^a-zA-Z0-9\s]', '',regex=True)
+    dataset_df[col] = dataset_df[col].replace(r'\s{2,}', '',regex=True)
+    
+string_cols = list(dataset_df.select_dtypes(include='object'))
+for col in string_cols:
+    dataset_df[col] = dataset_df[col].str.lower()
+```
+## Feature Encoding
+
