@@ -73,7 +73,7 @@ for col in nom_cols:
 
 ### Tokenizing
 
-To further clean our text columns, we continued to use NLTK and sklearn. First, the stopwards are removed using a lamba function on the columns and then stemming was applied. Finally, the columns were then combined into 2 columns representing all of the combined text and the combined text length.
+To further clean our text columns, we continued to use NLTK and sklearn. First, the stop-words are removed using a lamba function on the columns and then stemming was applied. Finally, the columns were then combined into 2 columns representing all of the combined text and the combined text length.
 
 ![image](https://user-images.githubusercontent.com/100324759/182908382-a62976ee-2d7c-4c1d-b966-226e97c855d5.png)
 
