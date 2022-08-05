@@ -89,7 +89,12 @@ The neural network we decided to use is a decision tree based ML model called LG
 
 Looking deeper into our ML model revealed that column_7 or combined text length was the most important feature and remained consistent even after using XGB instead of LGB. Interestingly, changing the learning rate for our ML model didnt appear to change the results overall in terms of accuracy. Trying various learning rates between 0.05 and 1 all yielded a relatively stable accuracy rating of > 94.5% with a learning rate of 1 being the lowest.
 
+Taking a look at our confusion matrix, non-fraudulent jobs were predicted extremely accurately with only a < 1% of non-fraud being predicted as fraud. However, the number of fraudulent job posts predicted as non job fraud was 37.6%
+
+![image](https://user-images.githubusercontent.com/100324759/183111594-d30f728e-97c4-4aa8-a5af-0e8ed2fd0a68.png)
+
+
 # Conclusion
 
-Overall, the machine learning model for detection job fraud proved to be a success. We were able to achieve an accuracy rating of > 98% on the model of choice and even with fluctuations in learning rate, the model proved to be quite resilient. We were also able to determine that certain sectors of the employment field were more susceptible to job fraud postings such as those with lower requirements (education/experience), administrative/eng positions, and also certain 'traits' were more identifiable with fraud jobs such as text length as mentioned in the ML model. While the project was a success, the limited availability of posting data in csv format is scarce. Future projects should look to scrape more data from web or find another source of data to improve the ML model more and eventually implement this into various job boards to prevent identity theft.
+Overall, the machine learning model for detection job fraud proved to be a success. We were able to achieve an accuracy rating of > 98% on the model of choice and even with fluctuations in learning rate, the model proved to be quite resilient. We were also able to determine that certain sectors of the employment field were more susceptible to job fraud postings such as those with lower requirements (education/experience), administrative/eng positions, and also certain 'traits' were more identifiable with fraud jobs such as text length as mentioned in the ML model. While the project was a success, the limited availability of posting data in csv format is scarce. Future projects should look to scrape more data from web or find another source of data to improve the ML model as the sample size of fraudulent jobs is quite low. Future improvements can enable implementation of this model into various job boards to prevent identity theft.
 
