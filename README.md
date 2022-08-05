@@ -16,6 +16,8 @@ In data analysis, there are several important steps to follow to ensure a good r
 
 ![outline](https://user-images.githubusercontent.com/100324759/182724518-8b1d7de3-b421-4c71-8e63-b355caee50da.PNG)
 
+### Blueprint/Dashboard
+
 To view the blue print of our project please visit [this link](https://docs.google.com/presentation/d/1v73JqSy9JSMub6i1UreA3L4CD9q1c_3ZiC92hr3AVbY/edit#slide=id.p)
 
 ## Initial Exploratory Data Analysis
