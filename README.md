@@ -38,7 +38,7 @@ Further exploration also revealed no correlation as shown in the heatmap
 
 ![heatmap](https://user-images.githubusercontent.com/100324759/182725759-5a461302-0b12-4871-810d-ff0fdd35fa83.PNG)
 
-## Summaries
+### Summaries
 
 Columns job_id, description, and requirements were dropped for the summaries which will be explained in future sections.
 
@@ -48,7 +48,7 @@ Aside from the just counts, we should also consider the percentages which gave u
 
 ![graphs](https://user-images.githubusercontent.com/100324759/182728992-071a9604-9e23-4d5b-a752-bef23f18eab8.PNG)
 
-## Cleaning
+## Data Preprocessing
 
 The data had to be cleaned primarily in the columns with strings such as requirements, description, etc due to how long and complex they are. 
 
@@ -62,6 +62,7 @@ string_cols = list(dataset_df.select_dtypes(include='object'))
 for col in string_cols:
     dataset_df[col] = dataset_df[col].str.lower()
 ```
+## Feature Engineering
 ### Feature Encoding
 
 The data was sub divided into nominal ('department', 'industry', 'function', 'Country') columns and ordinal columns ('employment_type','required_experience','required_education'). Given this, a target encoder was used on nominal columns while a labelencoder was applied to ordinal columns resulting in a much cleaner dataframe primarily made of integers. 
@@ -81,20 +82,23 @@ To further clean our text columns, we continued to use NLTK and sklearn. First, 
 
 ## Machine Learning Model
 
-Initialization of the ML model followed standard procedure with splitting the data accordingly into test and train data sets with a 20% test size. Followed by adding the scaler and scaling the data which gave us an overall std dev. of 1 and a mean of -1.
+### Train and Test Split
+Initialization of the ML model followed standard procedure with splitting the data accordingly into test and train data sets with a 10% test size of the overall dataset.
 
-The neural network we decided to use is a decision tree based ML model called LGBM classifier. Having 250 interations/run and a relatively small learning rate takes a good amount of time but nonetheless was successful as we were able to achieve a accuracy of ~97%.
+### Model Choice
+The neural network we decided to use is LightGBM which is a gradient boosting framework that uses tree based learning algotrithms. Having 250 interations and a learning rate of 0.08 takes ~18 seconds to run and achieved an accuracy of ~98% on the testing dataset.
 
 ![model](https://user-images.githubusercontent.com/100324759/183107192-95a86829-07e0-49bb-af64-27d2ae7fe2b9.PNG)
 ![testing](https://user-images.githubusercontent.com/100324759/183107275-1f491596-5b7d-4dbb-a12f-37cf6644b834.PNG)
 ![tree](https://user-images.githubusercontent.com/100324759/183109205-499602fc-2315-4ec2-bbdf-a7188e756310.PNG)
+    
+ ### Model Tuning
+Looking deeper into our ML model revealed that the industry feature was the most important feature and remained consistent even after using XGBOOST instead of LightGBM. Interestingly, changing the learning rate for our ML model didnt appear to change the results overall in terms of accuracy. Trying various learning rates between 0.05 and 1 along with altering the iterations and increase and decresing the test and training dataset sizes all yielded a relatively stable accuracy rating.
 
-Looking deeper into our ML model revealed that column_7 or combined text length was the most important feature and remained consistent even after using XGB instead of LGB. Interestingly, changing the learning rate for our ML model didnt appear to change the results overall in terms of accuracy. Trying various learning rates between 0.05 and 1 all yielded a relatively stable accuracy rating of > 94.5% with a learning rate of 1 being the lowest.
-
+ ### Model Results
 Taking a look at our confusion matrix, non-fraudulent jobs were predicted extremely accurately with only a < 1% of non-fraud being predicted as fraud. However, the number of fraudulent job posts predicted as non job fraud was 37.6%
 
 ![image](https://user-images.githubusercontent.com/100324759/183111594-d30f728e-97c4-4aa8-a5af-0e8ed2fd0a68.png)
-
 
 # Conclusion
 
