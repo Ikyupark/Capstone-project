@@ -50,8 +50,6 @@ Aside from the just counts, we should also consider the percentages which gave u
 
 ## Data Preprocessing
 
-The data had to be cleaned primarily in the columns with strings such as requirements, description, etc due to how long and complex they are. 
-
 We first dropped the 3 columns job_id, salary, and title due to either too mnay nulls or all unique values. We were still left with a large amount of nulls so they were filled with 'not specified'. The location column was then split so that we would only keep the country for consistency. Further modifications include removing punctuation and various characters and then lower casing all characters using the following code
 ```
 for col in clean_cols:
@@ -76,7 +74,7 @@ for col in nom_cols:
 
 ### Tokenizing
 
-To further clean our text columns, we continued to use NLTK and sklearn. First, the stop-words are removed using a lamba function on the columns and then stemming was applied. Finally, the columns were then combined into 2 columns representing all of the combined text and the combined text length.
+Four columns with large complex strings such as requirements, description, company, and benefits we used NLTK and sklearn. First, the stop-words are removed using a lamba function on the columns and then stemming and lemmatization was applied. Finally, the columns were then combined into a single column and then tokenized
 
 ![image](https://user-images.githubusercontent.com/100324759/182908382-a62976ee-2d7c-4c1d-b966-226e97c855d5.png)
 
