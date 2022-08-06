@@ -87,7 +87,7 @@ Initialization of the ML model followed standard procedure with splitting the da
 ### Model Choice
 The machine learning model chosen is LightGBM which is a gradient boosting framework that uses tree based learning algotrithms. Having 250 interations and a learning rate of 0.08 takes ~18 seconds to run and achieved an accuracy of ~98% on the testing dataset.
 
-![model](https://user-images.githubusercontent.com/100324759/183107192-95a86829-07e0-49bb-af64-27d2ae7fe2b9.PNG)
+![model](https://github.com/Ikyupark/Capstone-project/blob/main/Resources/Model%20parameters.PNG)
 ![testing](https://github.com/Ikyupark/Capstone-project/blob/main/Resources/LightGBM%20testing%20accuracy.PNG)
 
 The LightGBM model has the following benefits:
