@@ -86,7 +86,7 @@ To further clean our text columns, we continued to use NLTK and sklearn. First, 
 Initialization of the ML model followed standard procedure with splitting the data accordingly into test and train data sets with a 10% test size of the overall dataset.
 
 ### Model Choice
-The neural network we decided to use is LightGBM which is a gradient boosting framework that uses tree based learning algotrithms. Having 250 interations and a learning rate of 0.08 takes ~18 seconds to run and achieved an accuracy of ~98% on the testing dataset.
+The machine learning model chosen is LightGBM which is a gradient boosting framework that uses tree based learning algotrithms. Having 250 interations and a learning rate of 0.08 takes ~18 seconds to run and achieved an accuracy of ~98% on the testing dataset.
 
 ![model](https://user-images.githubusercontent.com/100324759/183107192-95a86829-07e0-49bb-af64-27d2ae7fe2b9.PNG)
 ![testing](https://user-images.githubusercontent.com/100324759/183107275-1f491596-5b7d-4dbb-a12f-37cf6644b834.PNG)
