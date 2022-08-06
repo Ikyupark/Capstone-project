@@ -88,6 +88,9 @@ Initialization of the ML model followed standard procedure with splitting the da
 ### Model Choice
 The neural network we decided to use is LightGBM which is a gradient boosting framework that uses tree based learning algotrithms. Having 250 interations and a learning rate of 0.08 takes ~18 seconds to run and achieved an accuracy of ~98% on the testing dataset.
 
+![model](https://user-images.githubusercontent.com/100324759/183107192-95a86829-07e0-49bb-af64-27d2ae7fe2b9.PNG)
+![testing](https://user-images.githubusercontent.com/100324759/183107275-1f491596-5b7d-4dbb-a12f-37cf6644b834.PNG)
+
 The LightGBM model has the following benefits:
 - faster training speed with higher accuracy compared to other models
 - lower memory usage
@@ -97,10 +100,6 @@ The LightGBM model has the following limitations:
 - sensitive to overfitting due to producing more complex trees compared to other models
 - sensitive to overfitting on small datasets making LightGBM incompatible with smaller datasets
     
-
-![model](https://user-images.githubusercontent.com/100324759/183107192-95a86829-07e0-49bb-af64-27d2ae7fe2b9.PNG)
-![testing](https://user-images.githubusercontent.com/100324759/183107275-1f491596-5b7d-4dbb-a12f-37cf6644b834.PNG)
-![tree](https://user-images.githubusercontent.com/100324759/183109205-499602fc-2315-4ec2-bbdf-a7188e756310.PNG)
     
  ### Model Tuning
 Looking deeper into our ML model revealed that the industry feature was the most important feature and remained consistent even after using XGBOOST instead of LightGBM. Interestingly, changing the learning rate for our ML model didnt appear to change the results overall in terms of accuracy. Trying various learning rates between 0.05 and 1 along with altering the iterations and increase and decresing the test and training dataset sizes all yielded a relatively stable accuracy rating.
