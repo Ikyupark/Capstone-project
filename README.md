@@ -105,7 +105,7 @@ Looking deeper into our ML model revealed that the industry feature was the most
  ### Model Results
 Taking a look at our confusion matrix, non-fraudulent jobs were predicted extremely accurately with only a < 1% of non-fraud being predicted as fraud. However, the number of fraudulent job posts predicted as non job fraud was 37.6%
 
-![image](https://user-images.githubusercontent.com/100324759/183111594-d30f728e-97c4-4aa8-a5af-0e8ed2fd0a68.png)
+![image](https://github.com/Ikyupark/Capstone-project/blob/main/Resources/model%20results.PNG)
 
 # Conclusion
 
