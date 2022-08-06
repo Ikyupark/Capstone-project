@@ -88,6 +88,16 @@ Initialization of the ML model followed standard procedure with splitting the da
 ### Model Choice
 The neural network we decided to use is LightGBM which is a gradient boosting framework that uses tree based learning algotrithms. Having 250 interations and a learning rate of 0.08 takes ~18 seconds to run and achieved an accuracy of ~98% on the testing dataset.
 
+The LightGBM model has the following benefits:
+    - faster training speed with higher accuracy compared to other models
+    - lower memory usage
+    - better compatibility with large datasets
+    
+The LightGBM model has the following limitations:
+    - sensitive to overfitting due to producing more complex trees compared to other models
+    - sensitive to overfitting on small datasets making LightGBM incompatible with smaller datasets
+    
+
 ![model](https://user-images.githubusercontent.com/100324759/183107192-95a86829-07e0-49bb-af64-27d2ae7fe2b9.PNG)
 ![testing](https://user-images.githubusercontent.com/100324759/183107275-1f491596-5b7d-4dbb-a12f-37cf6644b834.PNG)
 ![tree](https://user-images.githubusercontent.com/100324759/183109205-499602fc-2315-4ec2-bbdf-a7188e756310.PNG)
