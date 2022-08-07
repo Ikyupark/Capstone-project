@@ -2,6 +2,11 @@
 
 Data and the age of technology has nonetheless benefitted society a great deal. However, it is not to say that such advancements hasn't been accompanied by down-sides. One of which is identity fraud. The ability for fraudsters, scammers, and hackers to access information as they please is unprecedented and unsuspecting victims often succumb to methods such as phone calls, emails or even fake job postings! In an effort to prevent identity theft, using a data set acquired from [kaggle](https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction), we aim to create a machine learning model that can predict fraud vs non-fraud jobs based on several parameters.
 
+## Executive Presentation/Dashboard
+
+To view an executive presentation our project please visit [this link](https://docs.google.com/presentation/d/1v73JqSy9JSMub6i1UreA3L4CD9q1c_3ZiC92hr3AVbY/edit#slide=id.p)  
+To view a Tableau dashboard of our project please visit [this link](https://public.tableau.com/app/profile/ikyu.park/viz/capstone_16594856522150/Dashboard2?publish=yes)
+
 ## Outline
 
 In data analysis, there are several important steps to follow to ensure a good result which allows us to break our project down into 5 segments:
@@ -14,12 +19,6 @@ In data analysis, there are several important steps to follow to ensure a good r
 6. Final result
 
 ![Process Outline](https://github.com/Ikyupark/Capstone-project/blob/27d1306cb9c31c0ca6d9e3d5b2847f8c5f33eef3/Resources/New%20ML%20Diagram.png)
-
-### Executive Presentation/Dashboard
-
-To view an executive presentation our project please visit [this link](https://docs.google.com/presentation/d/1v73JqSy9JSMub6i1UreA3L4CD9q1c_3ZiC92hr3AVbY/edit#slide=id.p)  
-To view a Tableau dashboard of our project please visit [this link](https://public.tableau.com/app/profile/ikyu.park/viz/capstone_16594856522150/Dashboard2?publish=yes)
-
 
 ## Initial Exploratory Data Analysis
 
