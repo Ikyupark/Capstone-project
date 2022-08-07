@@ -85,7 +85,7 @@ After encoding the data the resulting dataset was made up of primarily numerical
 
 ### Tokenizing
 
-Four columns with large complex strings (requirements, description, company, and benefits) we used NLTK and sklearn.  
+For the four columns with large complex strings such as requirements, description, company, and benefits, we used NLTK and sklearn.  
   
 First, the stop-words are removed using a lamba function on the columns and then stemming and lemmatization was applied. Finally, the columns were then combined into a single column and then tokenized.  
 ![Tokenizing](https://user-images.githubusercontent.com/100324759/182908382-a62976ee-2d7c-4c1d-b966-226e97c855d5.png)
