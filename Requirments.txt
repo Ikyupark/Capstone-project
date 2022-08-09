@@ -1,0 +1,15 @@
+Required libraries:
+
+- String		
+- psycopg2		Version-2.9.3
+- getpass		
+- pandas		Version-1.4.2
+- numpy			Version-1.22.3
+- category_encoders	Version-2.5.0
+- sklearn		Version-1.1.1	
+- nltk			Version-3.7
+- lightgbm		Version-2.0.3
+- datetime		Version-4.5
+- xgboost		Version-1.6.1
+- matplotlib		Version-3.5.2
+- Pip			Version-22.2.2
